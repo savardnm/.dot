@@ -1,0 +1,37 @@
+# General
+alias c='clear'
+alias sb='source ~/.bashrc'
+alias eb='vim ~/.bashrc && sb'
+alias eba='vim ~/.bashalias && sb'
+
+# Git
+git config --global alias.co checkout
+git config --global alias.restage 'add -u'
+git config --global alias.unstage 'reset HEAD'
+
+alias recom='git add -u && git commit -m'
+alias gca='git add --a && git commit -m'
+
+alias ~GitHub='cd ~/Documents/GitHub'
+
+# Python
+alias python='python3'
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/my_env_folder
+export VIRTUALENVWRAPPER_VIRTUALENV=/home/nathan/.local/bin/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+alias pyenv='workon'
+alias mkpyenv='mkvirtualenv'
+
+# Bookmarks
+export GH=~/Documents/GitHub
+export SDU=~/Dropbox/SDU
+
+# Cows
+alias lc='la | lolcat'
+cowsay -f duck "hi nathan" | lolcat -f
+alias quack='cowsay -f duck'
+
+#ROS
+alias cm='catkin_make'
+alias config='/usr/bin/git --git-dir=/home/nathan/.dot/ --work-tree=/home/nathan'
