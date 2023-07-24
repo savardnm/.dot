@@ -1,0 +1,3 @@
+# Aliases for interacting with the .dot config
+# Add alias "config" to access .dot git repo
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
