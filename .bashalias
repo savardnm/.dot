@@ -4,6 +4,8 @@ alias sb='source ~/.bashrc'
 alias eb='vim ~/.bashrc && sb'
 alias eba='vim ~/.bashalias && sb'
 
+alias clipboard='xclip -sel clip' # allow pipe to clipboard
+
 # Git
 git config --global alias.co checkout
 git config --global alias.restage 'add -u'
@@ -26,12 +28,28 @@ alias mkpyenv='mkvirtualenv'
 # Bookmarks
 export GH=~/Documents/GitHub
 export SDU=~/Dropbox/SDU
+export ADCV=~/Dropbox/SDU/ADCV_Advanced-Computer-Vision
+export ADRC=~/Dropbox/SDU/ADRC_Advanced-Robot-Controls
+export EMLI=~/Dropbox/SDU/EMLN_Embedded-Linux
+export PRAR=~/Dropbox/SDU/PRAR_Project_Advanced_Robotivs
+export BLND=/snap/blender/3132/3.4/scripts/freestyle
+export MEER=~/Dropbox/SDU/MEER_Mechanical-Engineering-Robotics
+export TOAI=~/Dropbox/SDU/TOAI_AI-2
+export THSS=~/Dropbox/SDU/THSS_Thesis
+
 
 # Cows
 alias lc='la | lolcat'
 cowsay -f duck "hi nathan" | lolcat -f
 alias quack='cowsay -f duck'
 
-#ROS
+# ROS
 alias cm='catkin_make'
+
+# MatLab
+alias matlab-cmd='matlab -nosplash -nodesktop -sd'
+
+# .DOT Config
 alias config='/usr/bin/git --git-dir=/home/nathan/.dot/ --work-tree=/home/nathan'
+
+
