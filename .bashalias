@@ -44,6 +44,8 @@ cowsay -f duck "hi nathan" | lolcat -f
 alias quack='cowsay -f duck'
 
 # ROS
+source /opt/ros/noetic/setup.bash # ROS 1
+# source /opt/ros/foxy/setup.bash # ROS 2
 alias cm='catkin_make'
 
 # MatLab
@@ -52,4 +54,5 @@ alias matlab-cmd='matlab -nosplash -nodesktop -sd'
 # .DOT Config
 alias config='/usr/bin/git --git-dir=/home/nathan/.dot/ --work-tree=/home/nathan'
 
-
+# Android Studio
+PATH="$PATH:$HOME/Programs/android-studio/bin"

@@ -1,2 +1,11 @@
 # My .config
 This is my .config repository, which stores my configuration files and useful setup guides.
+
+# Setup
+to set up the configuration on a new computer, run the commands:
+
+```
+git clone --bare git@github.com:savardnm/.dot.git $HOME/.dot
+echo "source ~/.bashalias" >> ~/.bashrc
+source ~/.bashrc
+```
