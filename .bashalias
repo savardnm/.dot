@@ -3,6 +3,8 @@ alias c='clear'
 alias sb='source ~/.bashrc'
 alias eb='vim ~/.bashrc && sb'
 alias eba='vim ~/.bashalias && sb'
+alias fpath='readlink -f'
+alias release='lsb_release -a'
 
 alias clipboard='xclip -sel clip' # allow pipe to clipboard
 
@@ -13,6 +15,7 @@ git config --global alias.unstage 'reset HEAD'
 
 alias recom='git add -u && git commit -m'
 alias gca='git add --a && git commit -m'
+alias gpp='git pull && git push'
 
 alias ~GitHub='cd ~/Documents/GitHub'
 
@@ -36,7 +39,8 @@ export BLND=/snap/blender/3132/3.4/scripts/freestyle
 export MEER=~/Dropbox/SDU/MEER_Mechanical-Engineering-Robotics
 export TOAI=~/Dropbox/SDU/TOAI_AI-2
 export THSS=~/Dropbox/SDU/THSS_Thesis
-
+export WHOI=~/Dropbox/WHOI
+export Programs=~/Programs
 
 # Cows
 alias lc='la | lolcat'
@@ -56,3 +60,7 @@ alias config='/usr/bin/git --git-dir=/home/nathan/.dot/ --work-tree=/home/nathan
 
 # Android Studio
 PATH="$PATH:$HOME/Programs/android-studio/bin"
+
+# G-Cloud
+export GOOGLE_APPLICATION_CREDENTIALS="/home/nathan/.gcloud/keys/whoi-411811-27e942443fb6.json"
+
