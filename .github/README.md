@@ -11,3 +11,5 @@ config checkout
 echo "source ~/.bashalias" >> ~/.bashrc
 source ~/.bashrc
 ```
+
+for further optional setup scripts, view `~/.setup`

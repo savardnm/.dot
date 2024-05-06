@@ -5,13 +5,15 @@ alias eb='vim ~/.bashrc && sb'
 alias eba='vim ~/.bashalias && sb'
 alias fpath='readlink -f'
 alias release='lsb_release -a'
-
+alias uu='sudo apt update && sudo apt upgrade'
 alias clipboard='xclip -sel clip' # allow pipe to clipboard
 
 # Git
 git config --global alias.co checkout
 git config --global alias.restage 'add -u'
 git config --global alias.unstage 'reset HEAD'
+git config --global alias.update 'add -u'
+
 
 alias recom='git add -u && git commit -m'
 alias gca='git add --a && git commit -m'
@@ -20,7 +22,7 @@ alias gpp='git pull && git push'
 alias ~GitHub='cd ~/Documents/GitHub'
 
 # Python
-alias python='python3'
+#alias python='python3'
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/my_env_folder
 export VIRTUALENVWRAPPER_VIRTUALENV=/home/nathan/.local/bin/virtualenv
