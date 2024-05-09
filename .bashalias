@@ -29,6 +29,7 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/home/nathan/.local/bin/virtualenv
 source ~/.local/bin/virtualenvwrapper.sh
 alias pyenv='workon'
 alias mkpyenv='mkvirtualenv'
+alias pyenv-freeze='pip freeze -l'
 
 # Bookmarks
 export GH=~/Documents/GitHub
@@ -66,3 +67,5 @@ PATH="$PATH:$HOME/Programs/android-studio/bin"
 # G-Cloud
 export GOOGLE_APPLICATION_CREDENTIALS="/home/nathan/.gcloud/keys/whoi-411811-27e942443fb6.json"
 
+# Source Files
+source ~/.bashalias.local
